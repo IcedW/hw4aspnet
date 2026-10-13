@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Validation_Required" xml:space="preserve">
+    <value>The "{0}" field is required.</value>
+  </data>
+  <data name="Validation_StringLength" xml:space="preserve">
+    <value>The "{0}" field must be at most {1} characters long.</value>
+  </data>
+  <data name="Validation_Range" xml:space="preserve">
+    <value>The "{0}" field must be between {1} and {2}.</value>
+  </data>
+  <data name="Validation_NoDigits" xml:space="preserve">
+    <value>The "{0}" field must not contain digits.</value>
+  </data>
+  <data name="Field_Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Field_Director" xml:space="preserve">
+    <value>Director</value>
+  </data>
+  <data name="Field_Genre" xml:space="preserve">
+    <value>Genre</value>
+  </data>
+  <data name="Field_ReleaseYear" xml:space="preserve">
+    <value>Release year</value>
+  </data>
+  <data name="Field_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Field_Poster" xml:space="preserve">
+    <value>Poster</value>
+  </data>
+  <data name="Field_Culture" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Error_DuplicateTitle" xml:space="preserve">
+    <value>A movie with this title already exists.</value>
+  </data>
+  <data name="Error_PosterTooLarge" xml:space="preserve">
+    <value>The poster file must not exceed 5 MB.</value>
+  </data>
+  <data name="Error_PosterFormat" xml:space="preserve">
+    <value>Allowed formats: JPG, JPEG, PNG, WEBP, GIF.</value>
+  </data>
+  <data name="Error_PosterNotImage" xml:space="preserve">
+    <value>The file must be an image.</value>
+  </data>
+  <data name="Error_TitleEmpty" xml:space="preserve">
+    <value>The movie title cannot be empty.</value>
+  </data>
+  <data name="Error_InvalidYear" xml:space="preserve">
+    <value>Invalid release year.</value>
+  </data>
+  <data name="Error_DescriptionTooLong" xml:space="preserve">
+    <value>The description cannot exceed 2000 characters.</value>
+  </data>
+  <data name="Error_NoTranslations" xml:space="preserve">
+    <value>Fill in the movie details in at least one language.</value>
+  </data>
+  <data name="Error_UnsupportedCulture" xml:space="preserve">
+    <value>The language "{0}" is not supported.</value>
+  </data>
+  <data name="Error_DuplicateCulture" xml:space="preserve">
+    <value>The language "{0}" is specified more than once.</value>
+  </data>
+</root>

@@ -1,0 +1,129 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: #14161a;
+  color: #eee;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  background: #4a7dfc;
+  color: white;
+  font-size: 14px;
+}
+
+button.danger { background: #e05252; }
+button:hover { opacity: 0.9; }
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.movie-card {
+  background: #1f2229;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.poster {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.poster-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2a2d35;
+  color: #888;
+}
+
+.movie-info { padding: 14px; }
+.movie-info h3 { margin: 0 0 8px; }
+.description { color: #bbb; font-size: 14px; max-height: 60px; overflow: hidden; }
+.actions { display: flex; gap: 8px; margin-top: 12px; }
+
+.movie-form {
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #1f2229;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.movie-form label { display: flex; flex-direction: column; gap: 4px; font-size: 14px; }
+.movie-form input, .movie-form textarea {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #14161a;
+  color: #eee;
+  font-family: inherit;
+}
+
+.error { color: #ff6b6b; }
+.empty { color: #999; }
+
+/* --- Багатомовність --- */
+.header-controls { display: flex; align-items: center; gap: 12px; }
+
+.lang-switcher { display: flex; gap: 4px; }
+.lang-btn { background: #2a2d35; padding: 6px 10px; }
+.lang-btn.active { background: #4a7dfc; }
+
+.fallback-note { font-size: 12px; color: #e0b252; margin: 0 0 8px; }
+
+.error { white-space: pre-line; }
+
+.movie-form fieldset.translations {
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.movie-form legend { padding: 0 6px; font-size: 14px; }
+.hint { margin: 0; font-size: 12px; color: #999; }
+
+.tabs { display: flex; gap: 6px; flex-wrap: wrap; }
+.tab { background: #2a2d35; }
+.tab.active { background: #4a7dfc; }
+.tab-mark { color: #7be07b; }
+
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #24292f;
+  border: 1px solid #444;
+  white-space: nowrap;
+}
+.github-button svg { width: 18px; height: 18px; }
+.github-account { display: flex; align-items: center; gap: 8px; font-size: 14px; }
