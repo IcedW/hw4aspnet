@@ -82,6 +82,6 @@ export function deleteMovie(id) {
 
 export function posterUrl(path) {
   if (!path) return null
-  const origin = new URL(API_URL).origin
+  const origin = new URL(API_URL, window.location.origin).origin
   return origin + path
 }

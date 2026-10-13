@@ -19,7 +19,8 @@ builder.Services.AddDbContext<MovieContext>(options => options.UseSqlServer(conn
 // Локалізація: ресурси (.resx) лежать у папці Resources поряд із SharedResource
 builder.Services.AddLocalization();
 
-builder.Services.AddAuthorization();\nbuilder.Services.AddAuthentication(options =>
+builder.Services.AddAuthorization();
+builder.Services.AddAuthentication(options =>
 {
     options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = "GitHub";
@@ -76,7 +77,8 @@ builder.Services.AddCors(options =>
     {
         policy.WithOrigins(allowedOrigins)
               .AllowAnyHeader()
-              .AllowAnyMethod()\n              .AllowCredentials();
+              .AllowAnyMethod()
+              .AllowCredentials();
     });
 });
 
@@ -91,6 +93,7 @@ var localizationOptions = new RequestLocalizationOptions
 
 var app = builder.Build();
 
+app.UseDefaultFiles();
 app.UseStaticFiles();
 app.UseCors(ReactAppCors);
 app.UseAuthentication();
@@ -113,7 +116,7 @@ app.MapGet("/auth/me", (HttpContext context) =>
         username = context.User.Identity.Name,
         email = context.User.FindFirst(ClaimTypes.Email)?.Value
     });
-}).RequireAuthorization();
+});
 
 app.MapPost("/auth/logout", async (HttpContext context) =>
 {
